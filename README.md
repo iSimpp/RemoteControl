@@ -9,7 +9,7 @@ This project contains a Discord bot implemented in Python using the Discord.py l
 
 ## Setup
 1. **Install Python**: Make sure you have Python installed on your system. You can download it from the [official Python website](https://www.python.org/).
-2. **Install Dependencies**: Install the required Python: This process will be automated when you run the code so no worries.
+2. **Install Dependencies**: This process will be automated when you run the code so no worries.
 
 
 
