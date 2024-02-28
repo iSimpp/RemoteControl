@@ -33,4 +33,4 @@ This project is Open Source so it isn't storing your token anywhere but token.tx
 
 
 ## LICENSE
-This remote control has a MIT license that you can see here: (LICENSE)[LICENSE]
+This remote control has a MIT license that you can see here: [LICENSE](LICENSE)
