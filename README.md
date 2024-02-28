@@ -26,3 +26,11 @@ Contributions to this project are welcome! Feel free to open an issue or submit 
 
 ## Bugs
 If you encounter any **bugs** feel free to message me on GitHub: `iSimpp` or in discord: `isymbol`.
+
+## Security Issues
+This remote control doesn't have security issues as it saves your code in bot/token/token.txt.
+This project is Open Source so it isn't storing your token anywhere but token.txt in YOUR PC.
+
+
+## LICENSE
+This remote control has a MIT license that you can see here: (LICENSE)[LICENSE]
