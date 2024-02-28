@@ -1,10 +1,10 @@
 # Natro Macro Remote Control
 
 ## Overview
-This project contains a Discord bot implemented in Python using the Discord.py library. The bot includes features such as taking screenshots, controlling macro functionalities, and interacting with your pc via slash commands.
+This project contains a Discord bot implemented in Python using the Discord.py library. The bot includes features such as taking screenshots, controlling macro functionalities, and interacting with your PC via slash commands.
 
 ## Features
-- **Screenshot Command**: Allows you to take a screenshot of your screen and send it in a Discord channel.
+- **Screenshot Command**: Allows you to take a screenshot of your screen and send it to a Discord channel.
 - **Macro Control Commands**: Provides commands to start, pause, and exit a natro macro.
 
 ## Setup
@@ -14,7 +14,7 @@ This project contains a Discord bot implemented in Python using the Discord.py l
 
 
 ## Usage
-Once the bot is running and connected to your Discord server, you can interact with it using slash commands. Here are some example commands:
+Once the bot runs and connects to your Discord server, you can interact with it using slash commands. Here are some example commands:
 
 - `/screenshot`: Take a screenshot of the screen.
 - `/start`: Start the macro automation process by pressing F1.
@@ -22,7 +22,7 @@ Once the bot is running and connected to your Discord server, you can interact w
 - `/exit`: Exit the macro by pressing F3.
 
 ## Contributing
-Contributions to this project are welcome! If you have any ideas for new features, bug fixes, or improvements, feel free to open an issue or submit a pull request.
+Contributions to this project are welcome! Feel free to open an issue or submit a pull request if you have any ideas for new features, bug fixes, or improvements.
 
 ## Bugs
-If you encounter any **bugs** feel free to message me on github: `iSimpp` or in discord: `isymbol`.
+If you encounter any **bugs** feel free to message me on GitHub: `iSimpp` or in discord: `isymbol`.
