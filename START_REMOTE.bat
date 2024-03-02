@@ -2,6 +2,9 @@
 
 :: Set text color to green
 color 0A
+@echo off
+cd /d %~dp0
+
 
 IF NOT EXIST token_manager.py (
     color 0C
@@ -16,11 +19,20 @@ IF NOT EXIST bot.py (
 ) ELSE (
     set bot=True
 )
+IF NOT EXIST ../START.bat (
+    color 0C
+    echo START.bat DOES NOT EXIST
+) ELSE (
+    set start_bat=True
+)
 
-:: Check if both token_manager.py and bot.py exist, then start bot.py
-IF DEFINED bot IF DEFINED TOKEN_MANAGER (
-    start  bot.py
+IF DEFINED bot IF DEFINED TOKEN_MANAGER IF DEFINED start_bat (
+    start bot.py
+    cd ..
+    start START.bat
+
     exit
 )
+
 
 pause
