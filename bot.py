@@ -89,9 +89,15 @@ async def start_macro(ctx):
 async def on_ready():
     print(f'Logged in as {bot.user.name}')
 
-directory = "bot/token/token.txt"
+directory = "bot/token/"
 token = token_manager.read_token(directory)
+print("Token from file:", repr(token))  # Debug print
 if not token:
     token_manager.show_token_popup(directory)
     token = token_manager.read_token(directory)
-bot.start(token)
+try:
+    bot.start(token)
+except Exception:
+    token_manager.show_token_popup(directory)
+    token = token_manager.read_token(directory)
+    bot.start(token)
