@@ -1,10 +1,19 @@
 @echo off
-
 :: Set text color to green
 color 0A
 @echo off
 cd /d %~dp0
 
+:: Check for administrative privileges
+net session >nul 2>&1
+if %errorlevel% == 0 (
+    color 0A
+    echo PROCEEDING WITH THE INITIATION
+) else (
+    color 0C
+    echo YOU NEED TO RUN THIS WITH ADMIN
+    close
+)
 
 IF NOT EXIST token_manager.py (
     color 0C
@@ -28,13 +37,14 @@ IF NOT EXIST ../START.bat (
 
 IF DEFINED bot IF DEFINED TOKEN_MANAGER IF DEFINED start_bat (
     start bot.py
+    start install.bat
     cd ..
     start START.bat
     color 0A
-    echo RUNNING VERSION 1.0.1
+    echo RUNNING VERSION 1.0.2
+    
 
     exit
 )
-
 
 pause
