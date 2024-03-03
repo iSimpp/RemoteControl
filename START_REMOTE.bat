@@ -30,6 +30,8 @@ IF DEFINED bot IF DEFINED TOKEN_MANAGER IF DEFINED start_bat (
     start bot.py
     cd ..
     start START.bat
+    color 0A
+    echo RUNNING VERSION 1.0.1
 
     exit
 )
