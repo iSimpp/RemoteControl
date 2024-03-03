@@ -1,7 +1,3 @@
-# DO    NOT    RUN  THIS    IT'S    A    MODULE
-
-
-
 import os
 from tkinter import Tk, Label, Entry, Button, messagebox
 
@@ -10,16 +6,22 @@ def create_directory(directory):
         os.makedirs(directory)
 
 def save_token(token, directory):
-    create_directory(directory)
-    token_file_path = os.path.join(directory, "token.txt")
-    with open(token_file_path, 'w') as token_file:
-        token_file.write(token)
+    try:
+        create_directory(directory)
+        token_file_path = os.path.join(directory, "token.txt")  # Specify the file name
+        with open(token_file_path, 'w') as token_file:
+            token_file.write(token)
+    except Exception:
+        return token
 
 def read_token(directory):
-    token_file_path = os.path.join(directory, "token.txt")
-    if os.path.exists(token_file_path):
-        with open(token_file_path, 'r') as token_file:
-            return token_file.read().strip()
+    try:
+        token_file_path = os.path.join(directory, "token.txt")  # Specify the file name
+        if os.path.exists(token_file_path):
+            with open(token_file_path, 'r') as token_file:
+                return token_file.read().strip()
+    except Exception as e:
+        print("error: ", e)
     else:
         return None
 
