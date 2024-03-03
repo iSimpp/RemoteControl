@@ -29,7 +29,6 @@ IF NOT EXIST ../START.bat (
 IF DEFINED bot IF DEFINED TOKEN_MANAGER IF DEFINED start_bat (
     start bot.py
     cd ..
-    cd ..
     start START.bat
 
     exit
